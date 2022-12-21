@@ -1,0 +1,21 @@
+/* cores do carolsel */
+.bg_roxo{
+    background: #723da6;
+}
+.bg_amarelo{
+    background: #fdc200;
+}
+.bg_verde{
+    background: #21ad61;
+}
+.bg_vermelho{
+    background: #ff2c2c;
+}
+.bg_azul{
+    background: #0d6efd;
+}
+
+/* pra nao esquecer */
+.owl-nav{
+    display: none !important;
+}
