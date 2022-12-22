@@ -1,7 +1,6 @@
 // instancia jquery e evita conflitos
 // jQuery( function($){
 
-
 $(document).ready(function () {
 
    /* $('.owl-carousel').owlCarousel();*/
@@ -32,22 +31,44 @@ $(document).ready(function () {
       }
    })
 
+   /* botão comprar */
+   $('.featured-item a').addClass('btn btn-success stretch-link');
+   /* efeito nas imagens destaques - seletor */
+   $(".btncomp").on("mouseover", function() {
+      $(this).css({
+         'color': '#157347',
+         'background-color': '#fff',
+         'border-color': '#656466'});
+       
+  }).on("mouseout", function() {
+        $(this).css({
+         'color': '#fff',
+         'background-color': '#157347',
+         'border-color': 'none'});
+  });
+    
+/* faz inclusao de aviso novos lancamentos*/
+$('.launch').attr('class', 'lancamento');
+/* adiciona o span de lancamento */
+$('.lancamento').append('<span><i>lançamento</i></span>');
+
+
   
 
 
-   let titulos = $('h4') // tag
+   //let titulos = $('h4') // tag
 
-   let itens = $('.featured-item') // class
+   //let itens = $('.featured-item') // class
 
-   let destaques = $('#featured') // id
+   //let destaques = $('#featured') // id
 
-   console.log(titulos.first());
+   //console.log(titulos.first());
 
    // Configuração de produtos
 
-   $('.featured-item a').addClass('btn btn-dark stretch-link');
+   //$('.featured-item a').addClass('btn btn-dark stretch-link');
 
-   $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
+   //$('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
    // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
    // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
    // $('.featured-item:first h4').addClass('active')
@@ -59,7 +80,7 @@ $(document).ready(function () {
    // $('.featured-item:first h4').fadeOut()
    // $('.featured-item:first h4').css('color', '#f00')
 
-   $('.featured-item h4').dblclick(function () {
+   /*$('.featured-item h4').dblclick(function () {
 
       $(this).css({
          'color': '#f00',
@@ -67,19 +88,19 @@ $(document).ready(function () {
          'font-weight': '100',
       });
 
-   });
+   });*/
 
    /*
     * Manipulação de eventos
     */
 
-   $('.featured-item a').on('blur', function (event) {
+   /*$('.featured-item a').on('blur', function (event) {
 
       event.preventDefault();
 
       alert('Produto esgotado');
 
-   })
+   })*/
 
 
 })
