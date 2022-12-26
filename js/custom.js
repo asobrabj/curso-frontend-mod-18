@@ -52,7 +52,15 @@ $('.launch').attr('class', 'lancamento');
 /* adiciona o span de lancamento */
 $('.lancamento').append('<span><i>lançamento</i></span>');
 
+/* sem estilo no ul  */
+$('.footer-menu ul').css({
+   'align-items':'center',
+   'list-style': 'none',
+});
 
+$('.social-icons ul').css({
+         'list-style': 'none'
+      });
   
 
 
