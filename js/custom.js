@@ -62,8 +62,7 @@ $('.social-icons ul').css({
          'list-style': 'none'
       });
   
-
-
+ 
    //let titulos = $('h4') // tag
 
    //let itens = $('.featured-item') // class
